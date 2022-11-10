@@ -1,0 +1,5 @@
+C:\Users\prash\OneDrive\Desktop\sem_3\cse_210\cse210-student-articulate-csharp\Unit05\obj\release\net6.0\Unit05.csproj.AssemblyReference.cache
+C:\Users\prash\OneDrive\Desktop\sem_3\cse_210\cse210-student-articulate-csharp\Unit05\obj\release\net6.0\Unit05.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\prash\OneDrive\Desktop\sem_3\cse_210\cse210-student-articulate-csharp\Unit05\obj\release\net6.0\Unit05.AssemblyInfoInputs.cache
+C:\Users\prash\OneDrive\Desktop\sem_3\cse_210\cse210-student-articulate-csharp\Unit05\obj\release\net6.0\Unit05.AssemblyInfo.cs
+C:\Users\prash\OneDrive\Desktop\sem_3\cse_210\cse210-student-articulate-csharp\Unit05\obj\release\net6.0\Unit05.csproj.CoreCompileInputs.cache
