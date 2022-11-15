@@ -1,7 +1,5 @@
-# Robot Finds Kitten
-Simon Carless once described robotfindskitten as "less a game and more a way of 
-life ... It's fun to wander around until you find a kitten, at which point you feel 
-happy and can start again". I don't think I could have said it better myself!
+# Cycle
+You touch me? you die!!!
 
 ---
 ## Getting Started
@@ -33,5 +31,8 @@ root                    (project root folder)
 * raylib-cs 3.7.0.1
 
 ## Authors
+* Prashant Lamichhane
+* Melanie
+*Obediah
 * Matt Manley (manleym@byui.edu)
 * Scott Burton (burtons@byui.edu)
