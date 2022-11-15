@@ -100,8 +100,9 @@ namespace Unit05.Game.Casting
         /// </summary>
         private void PrepareBody()
         {
-            int x = Constants.MAX_X / 2;
-            int y = Constants.MAX_Y / 2;
+            
+            int x = (Constants.MAX_X / 2)-5;
+            int y = (Constants.MAX_Y / 2)-5;
 
             for (int i = 0; i < Constants.SNAKE_LENGTH; i++)
             {
@@ -117,6 +118,7 @@ namespace Unit05.Game.Casting
                 segment.SetColor(color);
                 _segments.Add(segment);
             }
+            
         }
     }
 }
