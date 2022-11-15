@@ -32,7 +32,7 @@ root                    (project root folder)
 
 ## Authors
 * Prashant Lamichhane
-* Melanie
-*Obediah
+* Melanie Anderson
+* Obediah Megargel
 * Matt Manley (manleym@byui.edu)
 * Scott Burton (burtons@byui.edu)
