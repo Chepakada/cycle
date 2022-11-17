@@ -43,6 +43,7 @@ namespace Unit05.Game.Scripting
         private void HandleFoodCollisions(Cast cast)
         {
             Snake snake = (Snake)cast.GetFirstActor("snake");
+            Cylce1 cycle = (Cylce1)cast.GetFirstActor("cycle");
             Score score = (Score)cast.GetFirstActor("score");
             Food food = (Food)cast.GetFirstActor("food");
             
@@ -50,6 +51,13 @@ namespace Unit05.Game.Scripting
             {
                 int points = food.GetPoints();
                 snake.GrowTail(points);
+                score.AddPoints(points);
+                food.Reset();
+            }
+             if (cycle.GetHead().GetPosition().Equals(food.GetPosition()))
+            {
+                int points = food.GetPoints();
+                cycle.GrowTail(points);
                 score.AddPoints(points);
                 food.Reset();
             }
@@ -62,14 +70,23 @@ namespace Unit05.Game.Scripting
         private void HandleSegmentCollisions(Cast cast)
         {
             Snake snake = (Snake)cast.GetFirstActor("snake");
+            Cylce1 cycle = (Cylce1)cast.GetFirstActor("cycle");
+            Actor head2 = cycle.GetHead();
             Actor head = snake.GetHead();
             List<Actor> body = snake.GetBody();
+            List<Actor> body2= cycle.GetBody();
 
             foreach (Actor segment in body)
             {
-                if (segment.GetPosition().Equals(head.GetPosition()))
+                if (segment.GetPosition().Equals(head2.GetPosition()))
                 {
                     _isGameOver = true;
+                }
+            }
+            foreach (Actor segment in body2){
+
+                if (segment.GetPosition().Equals(head.GetPosition())){
+                    _isGameOver= true;
                 }
             }
         }
