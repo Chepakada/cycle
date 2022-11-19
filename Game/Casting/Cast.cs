@@ -39,6 +39,10 @@ namespace Unit05.Game.Casting
             }
         }
 
+        
+
+
+
         /// <summary>
         /// Gets the actors in the given group. Returns an empty list if there aren't any.
         /// </summary>
@@ -85,6 +89,21 @@ namespace Unit05.Game.Casting
             }
             return result;
         }
+
+        public Actor GetSecondActor(string group)
+        {
+            Actor result = null;
+            if (_actors.ContainsKey(group))
+            {
+                if (_actors[group].Count > 0)
+                {
+                    result = _actors[group][1];
+                }
+            }
+            return result;
+        }
+
+        
 
         /// <summary>
         /// Removes the given actor from the given group.

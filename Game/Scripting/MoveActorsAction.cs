@@ -17,7 +17,7 @@ namespace Unit05.Game.Scripting
     /// </para>
     /// </summary>
     public class MoveActorsAction : Action{
-        List<Actor> _actor_list = new List<Actor>();
+
         
        
     
@@ -27,7 +27,7 @@ namespace Unit05.Game.Scripting
     /// <summary>
     /// Constructs a new instance of MoveActorsAction.
     /// </summary>
-    public MoveActorsAction(Cast cast,Script script){}
+    public MoveActorsAction(){}
 
     // 3) Override the Execute(Cast cast, Script script) method. Use the following 
     //    method comment. You custom implementation should do the following:
@@ -35,7 +35,7 @@ namespace Unit05.Game.Scripting
     //    b) loop through all the actors
     //    c) call the MoveNext() method on each actor.
     public void Execute(Cast cast, Script script){
-          _actor_list= cast.GetAllActors();
+          List<Actor> _actor_list = cast.GetAllActors();
           foreach(Actor param in _actor_list){
             param.MoveNext();
 

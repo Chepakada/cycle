@@ -120,19 +120,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\prash\\.nuget\\packages\\": {}
+    "C:\\Users\\melan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\prash\\OneDrive\\Desktop\\sem_3\\cse_210\\cse210-student-articulate-csharp\\Unit05\\Unit05.csproj",
+      "projectUniqueName": "C:\\Users\\melan\\OneDrive\\Desktop\\CSE 210\\cycle\\cycle\\Unit05.csproj",
       "projectName": "Unit05",
-      "projectPath": "c:\\Users\\prash\\OneDrive\\Desktop\\sem_3\\cse_210\\cse210-student-articulate-csharp\\Unit05\\Unit05.csproj",
-      "packagesPath": "C:\\Users\\prash\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\prash\\OneDrive\\Desktop\\sem_3\\cse_210\\cse210-student-articulate-csharp\\Unit05\\obj\\",
+      "projectPath": "C:\\Users\\melan\\OneDrive\\Desktop\\CSE 210\\cycle\\cycle\\Unit05.csproj",
+      "packagesPath": "C:\\Users\\melan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\melan\\OneDrive\\Desktop\\CSE 210\\cycle\\cycle\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\prash\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\melan\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"

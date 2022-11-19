@@ -24,6 +24,7 @@ namespace Unit05.Game
         public static int SNAKE_LENGTH = 8;
 
         public static Color RED = new Color(255, 0, 0);
+        public static Color ORANGE = new Color(255,173,0);
         public static Color WHITE = new Color(255, 255, 255);
         public static Color YELLOW = new Color(255, 255, 0);
         public static Color GREEN = new Color(0, 255, 0);
