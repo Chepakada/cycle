@@ -65,7 +65,7 @@ namespace Unit05.Game.Casting
                 segment.SetPosition(position);
                 segment.SetVelocity(velocity);
                 segment.SetText("#");
-                segment.SetColor(Constants.GREEN);
+                segment.SetColor(Constants.RED);
                 _segments.Add(segment);
             }
         }
@@ -107,11 +107,11 @@ namespace Unit05.Game.Casting
 
             for (int i = 0; i < Constants.SNAKE_LENGTH; i++)
             {
-            
-                Point position = new Point(x - i * Constants.CELL_SIZE, y+90);
-                Point velocity = new Point(1 * Constants.CELL_SIZE, 0);
+             Point position = new Point(x-i * Constants.CELL_SIZE, y+90);
+             Point velocity = new Point(1 * Constants.CELL_SIZE, 0);
+               
                 string text = i == 0 ? "8" : "#";
-                Color color = i == 0 ? Constants.YELLOW : Constants.GREEN;
+                Color color = i == 0 ? Constants.YELLOW : Constants.RED;
 
                 Actor segment = new Actor();
                 segment.SetPosition(position);
@@ -128,31 +128,5 @@ namespace Unit05.Game.Casting
 
             
         
-        // private void PrepareBody2()
-        // {
-            
-        //     int x = (Constants.MAX_X / 2);
-        //     int y = (Constants.MAX_Y / 2);
-
-        //     for (int i = 0; i < Constants.SNAKE_LENGTH; i++)
-        //     {
-            
-        //         Point position = new Point((x - i * Constants.CELL_SIZE), y+80);
-        //         Point velocity = new Point(1 * Constants.CELL_SIZE, 0);
-        //         string text = i == 0 ? "8" : "#";
-        //         Color color = i == 0 ? Constants.YELLOW : Constants.GREEN;
-
-        //         Actor segment = new Actor();
-        //         segment.SetPosition(position);
-        //         segment.SetVelocity(velocity);
-        //         segment.SetText(text);
-        //         segment.SetColor(color);
-        //         _segments.Add(segment);
-                
-               
-        //}
-    
-            
-        //}
     }
 }
