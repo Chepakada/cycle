@@ -40,19 +40,37 @@ namespace Unit05.Game.Scripting
         /// Updates the score nd moves the food if the snake collides with it.
         /// </summary>
         /// <param name="cast">The cast of actors.</param>
+
         private void HandleFoodCollisions(Cast cast)
         {
             Snake snake = (Snake)cast.GetFirstActor("snake");
+            Cylce1 cycle = (Cylce1)cast.GetFirstActor("cycle");
             Score score = (Score)cast.GetFirstActor("score");
             Food food = (Food)cast.GetFirstActor("food");
+            Random random = new Random(); 
+            List<int> numbers = new List<int>();
+            int[] nums= { 1,0,0,0,0,1,0,2,0,0,0,0,0,0,0,0 };
+                numbers.AddRange(nums);
+
+            int tail = random.Next(numbers.Count);
+            int tail_growth = numbers[tail];
             
             if (snake.GetHead().GetPosition().Equals(food.GetPosition()))
             {
                 int points = food.GetPoints();
-                snake.GrowTail(points);
+               
                 score.AddPoints(points);
                 food.Reset();
             }
+             if (cycle.GetHead().GetPosition().Equals(food.GetPosition()))
+            {
+                int points = food.GetPoints();
+                
+                score.AddPoints(points);
+                food.Reset();
+            }
+            cycle.GrowTail(tail_growth);
+            snake.GrowTail(tail_growth);
         }
 
         /// <summary>
@@ -62,14 +80,23 @@ namespace Unit05.Game.Scripting
         private void HandleSegmentCollisions(Cast cast)
         {
             Snake snake = (Snake)cast.GetFirstActor("snake");
+            Cylce1 cycle = (Cylce1)cast.GetFirstActor("cycle");
+            Actor head2 = cycle.GetHead();
             Actor head = snake.GetHead();
             List<Actor> body = snake.GetBody();
+            List<Actor> body2= cycle.GetBody();
 
             foreach (Actor segment in body)
             {
-                if (segment.GetPosition().Equals(head.GetPosition()))
+                if (segment.GetPosition().Equals(head2.GetPosition()))
                 {
                     _isGameOver = true;
+                }
+            }
+            foreach (Actor segment in body2){
+
+                if (segment.GetPosition().Equals(head.GetPosition())){
+                    _isGameOver= true;
                 }
             }
         }
@@ -100,6 +127,7 @@ namespace Unit05.Game.Scripting
                 food.SetColor(Constants.WHITE);
             }
         }
+
 
     }
 }
